@@ -86,7 +86,6 @@ body {
 .gallery > img:nth-child(24) { animation-delay: calc(-0.851 * var(--d)); --r:  -5deg; }
 .gallery > img:nth-child(25) { animation-delay: calc(-0.888 * var(--d)); --r:   1deg; }
 .gallery > img:nth-child(26) { animation-delay: calc(-0.925 * var(--d)); --r: -12deg; }
-.gallery > img:nth-child(27) { animation-delay: calc(-0.962 * var(--d)); --r:   6deg; }
 
 
 @keyframes slide {

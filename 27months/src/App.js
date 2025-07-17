@@ -26,7 +26,6 @@ import image23 from "./images/23.jpeg";
 import image24 from "./images/24.jpeg";
 import image25 from "./images/25.jpeg";
 import image26 from "./images/26.jpeg";
-import image27 from "./images/27.jpeg";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -75,7 +74,6 @@ function App() {
         <img src={image24} alt='24'/>
         <img src={image25} alt='25'/>
         <img src={image26} alt='26'/>
-        <img src={image27} alt='27'/>
       </div>
 
       <button className="msg-btn" onClick={() => setShowModal(true)}>📩 View Message</button>
