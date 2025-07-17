@@ -49,33 +49,33 @@ function App() {
       </div>
 
       <div className="gallery">
-        <img src={image1} />
-        <img src={image2} />
-        <img src={image3} />
-        <img src={image4} />
-        <img src={image5} />
-        <img src={image6} />
-        <img src={image7} />
-        <img src={image8} />
-        <img src={image9} />
-        <img src={image10} />
-        <img src={image11} />
-        <img src={image12} />
-        <img src={image13} />
-        <img src={image14} />
-        <img src={image15} />
-        <img src={image16} />
-        <img src={image17} />
-        <img src={image18} />
-        <img src={image19} />
-        <img src={image20} />
-        <img src={image21} />
-        <img src={image22} />
-        <img src={image23} />
-        <img src={image24} />
-        <img src={image25} />
-        <img src={image26} />
-        <img src={image27} />
+        <img src={image1} alt='1'/>
+        <img src={image2} alt='2'/>
+        <img src={image3} alt='3'/>
+        <img src={image4} alt='4'/>
+        <img src={image5} alt='5'/>
+        <img src={image6} alt='6'/>
+        <img src={image7} alt='7'/>
+        <img src={image8} alt='8'/>
+        <img src={image9} alt='9'/>
+        <img src={image10} alt='10'/>
+        <img src={image11} alt='11'/>
+        <img src={image12} alt='12'/>
+        <img src={image13} alt='13'/>
+        <img src={image14} alt='14'/>
+        <img src={image15} alt='15'/>
+        <img src={image16} alt='16'/>
+        <img src={image17} alt='17'/>
+        <img src={image18} alt='18'/>
+        <img src={image19} alt='19'/>
+        <img src={image20} alt='20'/>
+        <img src={image21} alt='21'/>
+        <img src={image22} alt='22'/>
+        <img src={image23} alt='23'/>
+        <img src={image24} alt='24'/>
+        <img src={image25} alt='25'/>
+        <img src={image26} alt='26'/>
+        <img src={image27} alt='27'/>
       </div>
 
       <button className="msg-btn" onClick={() => setShowModal(true)}>📩 View Message</button>
