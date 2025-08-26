@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./App.css";
 export default function App() {
   const [prices, setPrices] = useState({
-    extreme95: 51.95,
-    extreme91: 51.45,
-    diesel: 49,
+    extreme95: 54.91,
+    extreme91: 53.91,
+    diesel: 52.34,
   });
 
   const [form, setForm] = useState({
