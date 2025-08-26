@@ -1,45 +1,123 @@
-/* App.css */
-.sapot-mode {
-  background-color: #ff0055;
-  color: #ffffff;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Impact', sans-serif;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  animation: shake 0.5s infinite;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-h1, h2 {
-  text-shadow: 3px 3px 0 #000000;
-  margin: 10px;
+/* App Container */
+.app {
+  padding: 20px;
+  background: #f7f9fc;
+  min-height: 100vh;
+  color: #333;
 }
 
+/* Headings */
 h1 {
-  font-size: 4em;
-  color: yellow;
-  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
 }
 
 h2 {
-  font-size: 3em;
-  color: lime;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #444;
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+/* Card style for each section */
+.section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* Inputs */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border 0.2s ease;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border: 1px solid #4a90e2;
+}
+
+/* Price Info */
+.price {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Totals Section */
+.totals {
+  margin-top: 18px;
+  padding: 15px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Miscellaneous Sections (PLB, Gcash, etc.) */
+.misc-section {
+  margin-bottom: 25px;
+}
+
+.misc-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.misc-inputs input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.misc-total {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Final Grand Total */
+.grand-total {
+  text-align: center;
+  margin-top: 25px;
+  padding: 15px;
+  background: #eaf6ff;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
