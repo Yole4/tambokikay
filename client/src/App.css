@@ -1,39 +1,93 @@
-/* index.css - styles for Fuel Sales Inventory (Tailwind-like utility classes re-implemented)
-   Save as src/index.css and import it in your app (e.g. import './index.css')
-*/
-
-/* ---------- Basic resets ---------- */
-* {
-  box-sizing: border-box;
-}
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #1f2937; /* gray-800 */
-  background: #f8fafc; /* light background */
+/* General container */
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
 }
 
-/* ---------- Spacing & utilities (used in JSX) ---------- */
-.p-4 { padding: 1rem; }
-.p-2 { padding: 0.5rem; }
-.p-6 { padding: 1.5rem; }
+/* Title */
+h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
 
-.sm\:p-6 { padding: 1.5rem; } /* overridden at sm breakpoint below */
+/* Fuel + Misc section cards */
+.fuel-card,
+.misc-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
 
-.mb-1 { margin-bottom: 0.25rem; }
-.mb-2 { margin-bottom: 0.5rem; }
-.mb-3 { margin-bottom: 0.75rem; }
-.mb-4 { margin-bottom: 1rem; }
-.mb-6 { margin-bottom: 1.5rem; }
-.mt-6 { margin-top: 1.5rem; }
+/* Section headers */
+.fuel-card h2,
+.misc-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
 
-.font-bold { font-weight: 700; }
-.font-semibold { font-weight: 600; }
-.font-medium { font-weight: 500; }
+/* Fuel Inputs (Grid Layout) */
+.fuel-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 15px;
+}
 
+.fuel-inputs input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Miscellaneous Inputs (Vertical Layout) */
+.misc-inputs {
+  display: flex;
+  flex-direction: column; /* 👈 mo stack og pa ubos */
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.misc-inputs input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Totals and Summary */
+.results-summary {
+  background: #f3f4f6;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #111;
+}
+
+.results-summary p {
+  margin: 6px 0;
+}
+
+/* Final Miscellaneous Total */
+.grand-total {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #222;
+  text-align: right;
+}
 .text-2xl { font-size: 1.5rem; line-height: 1.2; }
 .text-xl { font-size: 1.25rem; line-height: 1.2; }
 .text-lg { font-size: 1.125rem; }
